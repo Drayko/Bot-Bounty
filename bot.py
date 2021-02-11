@@ -9,9 +9,9 @@ import os
 
 
 # Change to your token of @BotFather
-TOKEN = '1387532365:AAHhh1ZkBCciUqoCA3-Lz97CQ6vGnTL76t8'
+TOKEN = 'XXXXXXXXX:XXXXXXXXXXXXX-XXXXXXXXXXXXXX'
 # Change to the id number(s) of the user(s) who is/are authorized to use the bot
-authorizedUsers = [33792715, 987654321]
+authorizedUsers = [12345678, 987654321]
 userStep = {}
 
 menu = types.ReplyKeyboardMarkup()
@@ -85,8 +85,8 @@ def command_exec(message):
     if chat_id in authorizedUsers:
         bot.send_message(chat_id, 'Running: `$' +
                          message.text[len('/exec'):] + '`', parse_mode='Markdown')
-        f = os.popen(message.text[len('/exec'):])
-        result = f.read()
+       command = os.popen(message.text[len('/exec'):])
+        result = command.read()
         splitted_text = util.split_string(result, 3000)
         bot.send_message(
             chat_id, '`$' + message.text[len('/exec'):] + '`\n', parse_mode='Markdown')
@@ -105,8 +105,8 @@ def command_amassEnum(message):
     if chat_id in authorizedUsers:
         bot.send_message(chat_id, 'Running: `$ amass enum -d' +
                          message.text[len('/amassEnum'):] + '`', parse_mode='Markdown')
-        f = os.popen('amass enum -d' + message.text[len('/amassEnum'):])
-        result = f.read()
+       command = os.popen('amass enum -d' + message.text[len('/amassEnum'):])
+        result = command.read()
         splitted_text = util.split_string(result, 3000)
         bot.send_message(
             chat_id, '`$ amass enum -d' + message.text[len('/amassEnum'):] + '`\n', parse_mode='Markdown')
@@ -125,8 +125,8 @@ def command_nmapAdv(message):
     if chat_id in authorizedUsers:
         bot.send_message(chat_id, 'Running: `$ nmap -sC -sV -Pn -p-' +
                          message.text[len('/nmapAdv'):] + '`', parse_mode='Markdown')
-        f = os.popen('nmap -sC -sV -Pn -p-' + message.text[len('/nmapAdv'):])
-        result = f.read()
+       command = os.popen('nmap -sC -sV -Pn -p-' + message.text[len('/nmapAdv'):])
+        result = command.read()
         splitted_text = util.split_string(result, 3000)
         bot.send_message(
             chat_id, '`$ nmap -sC -sV -Pn -p-' + message.text[len('/nmapAdv'):] + '`\n', parse_mode='Markdown')
