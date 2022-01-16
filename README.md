@@ -1,8 +1,10 @@
 # Bot Bounty
 
-Python Script for Telegram Bot is specially built for pentest & bug bounty. It's like a telegram shell.
+![](https://visitor-badge.glitch.me/badge?page_id=draykoGithub.visitor-badge&amp;left_text=Times%20repository%20visited&right_color=orange&left_color=blue)
 
-You will be notified when your task(command line) is finished with results. This bot makes long-time tasks for you, taking off the need of your attention if it's finished.
+Python Script for Telegram Bot is specially builded for pentest & bug bounty. It's like a telegram shell.
+
+You will be notified when your task(command line) is finished with results. This bot make long time tasks by you, taking off the need of your attention if it's finished.
 
 
 ## Preview 👀
@@ -19,7 +21,7 @@ You will be notified when your task(command line) is finished with results. This
 
 ### 🔨 Prerequisites
 
-You need to install the Python Telegram bot API used for this bot(pyTelegramBotAPI).
+You need to install the Python Telegram bot api used for this bot(pyTelegramBotAPI).
 
 ```shell
 $ pip3 install pyTelegramBotAPI
@@ -27,7 +29,7 @@ $ pip3 install pyTelegramBotAPI
 
 ### 🥾 Steps to run your bot 🥾
 
-Create a bot with [@botfather](https://t.me/botfather) and replace the API Token given by @botfather in the script at line 12:
+Create a bot with [@botfather](https://t.me/botfather) and replace the API Token gaven by @botfather in the script at line 12:
 
 ```python
 TOKEN = 'XXXXXX:XXXXXXXXXXXXXXXX'
@@ -81,7 +83,7 @@ E.g.:
 
 ## 🎥 Security Logger
 
-There is a `logFileBot.txt` file where will log all commands sent by the user(s). Besides, if it's the case of someone trying to use your bot without your authorization.
+There is a `logFileBot.txt` file where will log all commands sended by user(s). In addition, if it's the case someone trying to use your bot without your authorization.
 
 
 ## Author
@@ -98,4 +100,5 @@ This project is licensed under the GNU General Public License v3.0
 
 ## Acknowledgments
 
-* To [Va5c0](https://github.com/Va5c0/), for his previous work.
+* To [Va5c0](https://github.com/Va5c0/), for his previus work.
+

@@ -1,0 +1,6 @@
+# config file, to develop or make changes
+config.py
+# some files automatic created
+.idea/
+__pycache__/
+.vscode/
