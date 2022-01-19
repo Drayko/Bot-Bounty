@@ -29,13 +29,13 @@ $ pip3 install pyTelegramBotAPI
 
 ### 🥾 Steps to run your bot 🥾
 
-Create a bot with [@botfather](https://t.me/botfather) and replace the API Token gaven by @botfather in the script at line 12:
+Create a bot with [@botfather](https://t.me/botfather) and replace the API Token gaven by @botfather in the script `config.py` at line 2:
 
 ```python
 TOKEN = 'XXXXXX:XXXXXXXXXXXXXXXX'
 ```
 
-And add the ID number(s) of the user(s) who is/are authorized at line 14:
+At same file(`config.py`) add the ID number(s) of the user(s) who is/are authorized at line 4:
 
 ```python
 authorizedUsers = [123456789, 987654321]
